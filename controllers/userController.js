@@ -8,7 +8,7 @@ exports.registerController = async (req, res) => {
         if (!username || !email || !password) {
             return res.status(400).send({
                 success: false,
-                message: "Please Fill all fields",
+                message: "Please enter all the fields",
             });
         }
         //exisiting user
